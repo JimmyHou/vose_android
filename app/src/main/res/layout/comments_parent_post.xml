@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+
+        <TextView
+            android:id="@+id/post_message"
+            android:layout_width="wrap_content"
+            android:layout_height="700px"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@+id/post_message"
+            android:textColor="@color/white"
+            android:textSize="55px" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/company_name"
+            android:textSize="42px"
+            android:textColor="@color/transparent_white"
+            android:layout_marginTop="5sp"
+            android:textAllCaps="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/clickable_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            >
+
+            <ImageButton
+                android:id="@+id/post_option_image"
+                android:layout_width="21dip"
+                android:layout_height="21dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10sp"
+                android:focusable="false"
+                android:background="@drawable/ic_share"
+                />
+
+            <ImageButton
+                android:id="@+id/like_button_image"
+                android:layout_width="21dip"
+                android:layout_height="21dip"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/post_option_image"
+                android:focusable="false"
+                android:background="@drawable/ic_like_before"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/likes_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            >
+
+            <!--android:layout_alignParentBottom="true" is important to align both number and text to bottom-->
+            <TextView
+                android:id="@+id/number_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+id/number_likes"
+                android:textSize="40px"
+                android:textColor="@color/transparent_white"
+                android:layout_alignParentBottom="true"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/likes"
+                android:textSize="30px"
+                android:textAllCaps="true"
+                android:textColor="@color/transparent_white"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/number_likes"
+                android:layout_alignParentBottom="true"
+                >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comments_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/likes_section"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+
+            >
+
+            <TextView
+                android:id="@+id/number_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+id/number_comments"
+                android:textColor="@color/transparent_white"
+                android:textSize="40px"
+                android:layout_alignParentBottom="true"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                android:textSize="30px"
+                android:textAllCaps="true"
+                android:textColor="@color/transparent_white"
+                android:layout_marginLeft="5sp"
+                android:layout_toRightOf="@id/number_comments"
+                android:layout_alignParentBottom="true"
+                >
+            </TextView>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/post_relative_time"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="@+id/post_relative_time"
+            android:textSize="40px"
+            android:textColor="@color/transparent_white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5sp"
+            android:layout_alignParentTop="true"
+            >
+        </TextView>
+
+</RelativeLayout>

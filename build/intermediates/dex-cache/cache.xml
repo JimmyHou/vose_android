@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jimmyhou/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-595a942cb5ac3a1d20a91fd3188c4ddb385449c5.jar" />
+    </item>
+    <item
+        jar="/Users/jimmyhou/Music/project/app/libs/Parse-1.8.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/Parse-1.8.0-c4f6de2e2f581a15578fd588a92bd611f1e5dcd4.jar" />
+    </item>
+    <item
+        jar="/Users/jimmyhou/Music/project/app/libs/ParseCrashReporting-1.8.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="55e71442ecbce939ce2a1ad75d1a4408a61d6804">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.8.0-f4388dfdf633b81c62ead07170cf846aefe45e50.jar" />
+    </item>
+    <item
+        jar="/Users/jimmyhou/Music/project/app/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/gson-2.2.4-d7b9b58beb4ee77fd0c09496b9e2cc5f3ec3f463.jar" />
+    </item>
+    <item
+        jar="/Users/jimmyhou/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-c8a718c70945d873e8a4191cc2054be7fc147ab9.jar" />
+    </item>
+    <item
+        jar="/Users/jimmyhou/Music/project/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/classes-abbfa46dfa819c6a4789388bf909ad05d1b30783.jar" />
+    </item>
+    <item
+        jar="/Users/jimmyhou/Music/project/app/libs/gson-2.2.4-sources.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="10ab84ba225b583b10713f57c04270c918ef162b">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/gson-2.2.4-sources-d32cefedf490c6f464fe7ef175ffc18c29101888.jar" />
+    </item>
+    <item
+        jar="/Users/jimmyhou/Music/project/app/libs/ocpsoft-pretty-time-1.0.7.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7ffb3bd5c0254f3895a2b647ea882df4eea0a166">
+        <dex dex="/Users/jimmyhou/Music/project/app/build/intermediates/pre-dexed/debug/ocpsoft-pretty-time-1.0.7-270961b087da70f9f8bba3d8f22ce85ff20c5726.jar" />
+    </item>
+
+</items>

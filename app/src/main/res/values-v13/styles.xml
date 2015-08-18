@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <!--item name="android:background">@android:color/transparent</item-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <!--item name="android:minHeight">10dip</item-->
+    </style>
+</resources>

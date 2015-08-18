@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <RelativeLayout
+        android:id="@+id/comment_message_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <com.vose.util.LinkTextView
+            android:id="@+id/comment_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:gravity="center_vertical"
+            android:text="@+id/comment_message"
+            android:autoLink="web|email"
+            android:textColor="@color/voice_icon_blue"
+            android:textSize="17sp" >
+        </com.vose.util.LinkTextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lower_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/comment_message_section"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/comment_relative_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/comment_relative_time"
+            android:textColor="@color/list_view_divider_gray"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/comment_number_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/comment_number_likes"
+            android:drawableLeft="@drawable/ic_comment_like_before"
+            android:textSize="14sp"
+            android:drawablePadding="5dip"
+            android:textColor="@color/list_view_divider_gray"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

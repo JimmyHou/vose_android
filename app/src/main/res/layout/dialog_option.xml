@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="flag"
+            android:textSize="15dp"
+            android:textColor="@color/voice_icon_blue"
+            />
+
+        <View
+            android:id="@+id/separate_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:text="share"
+            android:textSize="15dp"
+            android:clickable="true"
+            android:textColor="@color/voice_icon_blue"/>
+</LinearLayout>

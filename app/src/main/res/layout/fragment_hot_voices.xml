@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_hot_voices"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/hot_voice_swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+         <!--Gravity doesn't work...should use layout_centerHorizontal & layout_vertical-->
+         <RelativeLayout
+             android:id="@+id/progressSection"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             >
+
+             <ProgressBar android:id="@+id/progressBar"
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 />
+
+
+             <TextView
+                 android:id="@+id/loading_message"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@+id/progressBar"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="8dp"
+                 android:text="@string/loading_posts"
+                 android:textSize="20sp"
+                 android:textColor="@color/transparent_white"
+                 />
+
+         </RelativeLayout>
+
+         <TextView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:id="@+id/no_hot_voices_message"
+             android:gravity="center"
+             android:text="@string/no_hot_voices_message"
+             android:textSize="20dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:orientation="vertical"
+             android:layout_gravity="center_vertical"
+             android:visibility="gone"
+             android:textColor="@color/transparent_white"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true"
+             android:layout_centerInParent="true"/>
+
+         <RelativeLayout
+             android:id="@+id/no_following_company_message"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_margin="10dp"
+             android:visibility="visible"
+             >
+
+             <TextView
+                 android:id="@+id/no_watchlist_title"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:textColor="@color/transparent_white"
+                 android:text="@string/no_following_company_message_title"
+                 />
+
+             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal" >
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="20dp"
+                     android:gravity="center"
+                     android:textColor="@color/transparent_white"
+                     android:lineSpacingExtra="3dp"
+                     android:text="@string/no_following_company_message_sentence"
+                     />
+
+                 <TextView
+                     android:id="@+id/following_icon"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="17dp"
+                     android:layout_marginLeft="109dp"
+                     android:drawableLeft="@drawable/ic_follow_before"
+
+                     />
+
+             </RelativeLayout>
+
+         </RelativeLayout>
+
+
+
+
+
+         <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+        />
+
+       </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

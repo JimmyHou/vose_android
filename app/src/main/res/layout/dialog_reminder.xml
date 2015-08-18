@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_dialog_black"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading"
+        android:id="@+id/message"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="@color/white"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dialog_text_gray"/>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" OK "
+        android:textColor="@color/white"
+        android:background="@color/transparent_dialog_black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="-5dp"
+        />
+
+</LinearLayout>

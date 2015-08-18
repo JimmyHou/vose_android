@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  android:clickable="true" so the below fragment won't be clickable!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:background="@drawable/background_color"
+    android:clickable="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/post_card_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_post_black"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        >
+
+
+        <!--android:textCursorDrawable = "@null" make cursor the same color with textColor-->
+        <EditText
+            android:id="@+id/post_content"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:hint="@string/make_a_post"
+            android:gravity="center"
+            android:background="#00000000"
+            android:textCursorDrawable = "@null"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

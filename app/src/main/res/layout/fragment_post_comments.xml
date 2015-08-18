@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView android:layout_width="fill_parent"
+        android:id="@+id/post_comments_no_comment"
+        android:layout_height="wrap_content"
+        android:text="@string/no_comment"
+        android:textSize="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="350dp"
+        android:visibility="gone"
+        android:textColor="@color/list_view_divider_gray"
+        android:gravity="center_horizontal"/>
+
+
+    <RelativeLayout
+        android:id="@+id/progressSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        >
+
+        <ProgressBar android:id="@+id/progressBar"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:id="@+id/loading_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:text="@string/loading_posts"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/list_view_divider_gray"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comments_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:divider="@color/list_view_divider_gray"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="0.5dp"
+        android:clickable="true"
+        android:layout_above="@+id/footer"/>
+    <View
+        android:id="@+id/separate_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:clickable="true"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:background="@color/comment_edittext_background_transparent_black"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/new_comment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/leave_a_comment"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/leave_comment_button"
+            android:cursorVisible="true"
+            android:textColor="@color/voice_icon_blue"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:clickable="true"
+            android:background="@drawable/editext_round"
+            />
+
+
+        <TextView
+            android:id="@+id/leave_comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/send"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color
+        name="voice_icon_blue"
+        >#fc154f81</color>
+
+    <color
+        name="button_red"
+        >#FF6B6B</color>
+
+    <color
+        name="post_gray"
+        >#ff555555</color>
+
+    <color
+        name="list_view_divider_gray"
+        >#ac8d8d8d</color>
+
+    <color name="list_view_divider_black">#ac325d73</color>
+
+    <color name="company_frame_background_white_transparent"
+        >#14ffffff</color>
+
+    <color
+        name="white"
+        >#ffffffff</color>
+
+    <color
+        name="transparent"
+        >#ffffff</color>
+
+    <color name="comment_edittext_background_transparent_black"
+        >#d8000000</color>
+
+    <color
+        name="tab_selector_gray"
+        >#8aeeeeee</color>
+
+    <color
+        name="transparent_white"
+        >#CCffffff</color>
+
+    <color name="action_bar_light_blue">#cccde0e8</color>
+
+    <color
+        name="black"
+        >#000000</color>
+
+    <color
+        name="tab_divider_transparent_black"
+        >#1f000000</color>
+
+    <color
+        name="hint_gray"
+        >#A9A9A9</color>
+
+    <color
+        name="transparent_post_black"
+        >#33000000</color>
+
+    <color name="search_box_transparent_black">#48000000</color>
+    <color
+        name="transparent_dialog_black"
+        >#aa000000</color>
+
+    <color
+        name="transparent_dark_black"
+        >#ca000000</color>
+
+
+
+    <color
+        name="dialog_text_gray"
+        >#ff8e8e8e</color>
+
+
+    <color
+        name="tab_host_white"
+        >#acd1d1d1</color>
+
+    <color name="search_hint_transparent_white">#a7ffffff</color>
+
+
+    <!-- Action Bar Colors -->
+    <color name="ActionBarGradientStart">#3C3C3C</color>
+    <color name="ActionBarGradientEnd">#252525</color>
+    <color name="ActionBarDropdownBackground">#D8D8D8</color>
+    <color name="ActionBarDropdownItemBackground">#F2F2F2</color>
+    <color name="ActionBarFilerDropdownMenuSectionBackground">#E3E3E3</color>
+    <color name="GrayBackground">#979797</color>
+    <color name="GrayText">#979797</color>
+    <color name="DarkGray">#A9A9A9</color>
+
+</resources>

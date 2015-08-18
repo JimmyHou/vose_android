@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--must set background color and clicckable otherwise the below activity/fragment will show up-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/background_color"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/select_industry"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/industry_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/button"
+        android:text="@string/next" />
+
+</LinearLayout>

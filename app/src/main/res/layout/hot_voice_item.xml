@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+ <LinearLayout
+    android:id="@+id/post_card_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_post_black"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:id="@+id/upper_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/company_name"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/transparent_white"
+            android:textAllCaps="true"
+            android:layout_alignParentLeft="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/post_relative_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@+id/post_relative_time"
+            android:textSize="13sp"
+            android:textColor="@color/transparent_white"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+     <LinearLayout
+         android:id="@+id/post_message_section"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:minHeight="70dp"
+         android:layout_margin="10dp"
+         >
+        <com.vose.util.LinkTextView
+            android:id="@+id/post_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="@+id/post_message"
+            android:textColor="@color/white"
+            android:autoLink="web|email"
+            android:lineSpacingExtra="5sp" />
+     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lower_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        >
+     <RelativeLayout
+         android:id="@+id/clickable_section"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginRight="-20dp"
+         android:gravity="bottom"
+         >
+
+         <RelativeLayout
+             android:id="@+id/option_section"
+             android:layout_height="match_parent"
+             android:layout_width="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginRight="-10dp"
+             >
+
+             <Button
+                 android:id="@+id/post_option_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:focusable="false"
+                 android:background="@android:color/transparent"
+                 />
+
+
+             <ImageView
+                 android:id="@+id/post_option_image"
+                 android:layout_width="23dip"
+                 android:layout_height="23dip"
+                 android:layout_alignParentBottom="true"
+                 android:focusable="false"
+                 android:layout_centerHorizontal="true"
+                 android:background="@drawable/ic_share"
+                 />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_height="match_parent"
+             android:layout_width="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_toRightOf="@id/option_section"
+            >
+
+             <Button
+                 android:id="@+id/like_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:focusable="false"
+                 android:background="@android:color/transparent"
+                 />
+
+             <ImageView
+                 android:id="@+id/like_button_image"
+                 android:layout_width="23dip"
+                 android:layout_height="23dip"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:focusable="false"
+                 android:layout_alignParentBottom="true"
+                 android:background="@drawable/ic_like_before"
+              />
+         </RelativeLayout>
+
+
+     </RelativeLayout>
+
+   <RelativeLayout
+        android:id="@+id/likes_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        >
+
+       <!--android:layout_alignParentBottom="true" is important to align both number and text to bottom-->
+        <TextView
+            android:id="@+id/number_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/number_likes"
+            android:textSize="12sp"
+            android:textColor="@color/transparent_white"
+            android:layout_alignParentBottom="true"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/likes"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textColor="@color/transparent_white"
+            android:layout_marginLeft="5sp"
+            android:layout_toRightOf="@id/number_likes"
+            android:layout_alignParentBottom="true"
+            >
+        </TextView>
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/comments_section"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_toRightOf="@id/likes_section"
+         android:layout_marginLeft="10dp"
+         android:gravity="bottom"
+         >
+
+         <TextView
+             android:id="@+id/number_comments"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@+id/number_comments"
+             android:textColor="@color/transparent_white"
+             android:textSize="12sp"
+             android:layout_alignParentBottom="true"
+             >
+         </TextView>
+
+         <TextView
+             android:id="@+id/text_comments"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/comments"
+             android:textSize="12sp"
+             android:textAllCaps="true"
+             android:textColor="@color/transparent_white"
+             android:layout_marginLeft="5sp"
+             android:layout_toRightOf="@id/number_comments"
+             android:layout_alignParentBottom="true"
+             >
+         </TextView>
+     </RelativeLayout>
+    </RelativeLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

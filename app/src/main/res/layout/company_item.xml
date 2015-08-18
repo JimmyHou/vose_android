@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/company_frame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/company_frame_background_white_transparent"
+        >
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/company_section"
+         android:layout_alignParentLeft="true"
+         android:gravity="center"
+         android:layout_centerVertical="true"
+         >
+         <RelativeLayout
+             android:id="@+id/company_name_section"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/has_new_post_mark"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/ic_has_new_post_dot"
+                 />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+id/company_name"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp" >
+            </TextView>
+         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/industry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/company_name"
+            android:layout_below="@+id/company_name_section"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/DarkGray"
+            android:textSize="15sp" >
+        </TextView>
+     </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/follow_company"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/post_option_image"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_follow_before"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

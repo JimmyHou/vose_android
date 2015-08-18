@@ -1,0 +1,74 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.voice.activity.MainActivity" >
+
+
+    <item android:id="@+id/action_make_post_tabs_activity"
+        android:icon="@drawable/ic_action_post"
+        android:title="@string/action_post"
+        android:showAsAction="always"/>
+
+    <item android:id="@+id/action_make_post_company_posts_fragment"
+        android:icon="@drawable/ic_action_post"
+        android:title="@string/action_post"
+        android:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/post"
+        android:title="Post"
+        android:visible="false"
+        android:showAsAction="ifRoom"/>
+
+
+    <item android:id="@+id/search_box"
+        android:title ="Search"
+        android:hint = "@string/search_to_post_hint"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView" />
+
+
+
+     <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/ic_action_overflow"
+        android:title=""
+        android:showAsAction="always">
+        <menu>
+
+          <item
+               android:id="@+id/action_my_posts"
+               android:title="@string/action_my_posts"
+               android:showAsAction="always"
+              />
+
+
+          <item
+               android:id="@+id/action_create_company"
+               android:title="@string/action_create_company"
+               android:showAsAction="always"
+              />
+
+
+           <item
+                android:id="@+id/action_feedback"
+                android:title="@string/action_feedback"
+                android:showAsAction="always"
+                />
+            <item
+                android:id="@+id/action_rules"
+                android:title="@string/action_rules"
+                android:showAsAction="always"
+                />
+
+           <item
+                 android:id="@+id/action_logout"
+                 android:title="@string/action_logout"
+                 android:showAsAction="always"
+                />
+
+        </menu>
+    </item>
+
+</menu>

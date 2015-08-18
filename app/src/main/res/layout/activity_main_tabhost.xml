@@ -1,0 +1,36 @@
+<android.support.v4.app.FragmentTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_color"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!--the tab widget style is controlled by Theme in AndroidManifest.xml application-->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background = "@android:color/transparent"
+            />
+       <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/tab_divider_transparent_black"/>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            style="@style/TabHostStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+         />
+
+    </LinearLayout>
+ </android.support.v4.app.FragmentTabHost>
